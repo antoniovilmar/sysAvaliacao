@@ -2,8 +2,8 @@ target/*
 .settings/*
 .classpath
 <<<<<<< HEAD
+<<<<<<< HEAD
 .target
 .project
 .settings/
 *.launch
-/target/
