@@ -35,7 +35,7 @@ public class Avaliacao implements Serializable {
 	private Boolean ativo;
 	@Column(name = "inicio", nullable = false)
 	private LocalDate inicio;
-	@Column(name = "inicio", nullable = false)
+	@Column(name = "fim", nullable = false)
 	private LocalDate fim;
 	@Column(name = "exportado", nullable = false)
 	private Boolean exportado;

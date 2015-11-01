@@ -5,11 +5,14 @@
 	<persistence-unit name="sysAvaliacaoPersistenceUnit"
 		transaction-type="JTA">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<jta-data-source>java:/MySQL-DS</jta-data-source>
+		<jta-data-source>java:jboss/datasources/MySQL-DS</jta-data-source>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.transaction.jta.platform"
+				value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
 	</persistence-unit>
 </persistence>

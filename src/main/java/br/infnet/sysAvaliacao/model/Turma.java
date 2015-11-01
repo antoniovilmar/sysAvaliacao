@@ -43,7 +43,7 @@ public class Turma implements Serializable {
 	private List<Avaliacao> avaliacoes;
 	@Column(name = "inicio", nullable = false)
 	private LocalDate inicio;
-	@Column(name = "inicio", nullable = false)
+	@Column(name = "fim", nullable = false)
 	private LocalDate fim;
 
 	public Long getId() {
